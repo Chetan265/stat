@@ -3,7 +3,7 @@
 #' @param  x numeric variable
 stat <-  function(x){
   #1 row and 2 columns
-  par(mfow = c(1,2))
+  par(mfrow = c(1,2))
   # Histogram
   hist(x, col = rainbow(30))
   #Box plot
