@@ -10,9 +10,11 @@ stat <-  function(x){
   boxplot(x, col = "red")
   # 1 row and 1 column
   par(mfrow = c(1,1))
-
+  # Numerical calculation
   data.frame(mean = mean(x),
              median = median(x),
              min = min(x),
-             max = max(x))
+             max = max(x),
+            variance = var(x),
+            sd = sd(x))
 }
